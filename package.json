@@ -1,32 +1,32 @@
 {
     "private": true,
     "author": "ORDBOK contributors",
-    "bugs": "https://github.com/ordbok/plugin-boilerplate/issues",
-    "description": "Dictionary plugin boilerplate",
-    "homepage": "https://github.com/ordbok/plugin-boilerplate#readme",
+    "bugs": "https://github.com/ordbok/search-plugin/issues",
+    "description": "Dictionary search plugin",
+    "homepage": "https://github.com/ordbok/search-plugin#readme",
     "license": "MIT",
     "main": "index.js",
-    "name": "@ordbok/plugin-boilerplate",
-    "repository": "https://github.com/ordbok/plugin-boilerplate.git",
+    "name": "@ordbok/search-plugin",
+    "repository": "https://github.com/ordbok/search-plugin.git",
     "types": "index.d.ts",
     "version": "0.2.0",
     "devDependencies": {
+        "@ordbok/core": "~0.2.0",
         "@ordbok/typedoc-theme": "~0.6.0",
-        "@ordbok/core": "~v0.2.0",
         "@types/node": "^10.0.0",
         "browserify": "^16.5.0",
-        "typedoc": "~0.15.3",
-        "typescript": "~3.7.2"
+        "typedoc": "~0.15.5",
+        "typescript": "~3.7.4"
     },
     "engines": {
         "node": ">=10.0.0"
     },
     "files": [
+        "client/",
         "lib/",
         "index.d.ts",
         "index.js",
         "LICENSE",
-        "ordbok-plugin.d.ts",
         "ordbok-plugin.js",
         "README.md"
     ],
@@ -40,9 +40,9 @@
     "scripts": {
         "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
         "build-1": "tsc --build sources/tsconfig/*.json",
-        "build-2": "browserify --exclude @ordbok/core --outfile client/plugin-boilerplate.js --standalone PluginBoilerplate index.js",
+        "build-2": "browserify --external @ordbok/core --outfile client/oo-search-plugin.js --standalone OOSearchPlugin index.js",
         "build-3": "cd sources/tsconfig && typedoc --out ../../docs --tsconfig typedoc.json",
         "clean": "rm -rf $(< .clean)",
-        "watch": "tsc --build tsconfig/*.json --watch"
+        "watch": "npm run build-1 -- --watch"
     }
 }

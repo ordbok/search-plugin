@@ -1,1 +1,4 @@
-export declare function myUtilityFunction(call: string, args: any): void;
+export * from './ISearchEntry';
+export * from './ISearchIndex';
+export * from './ISearchMatch';
+export * from './Search';

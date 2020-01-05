@@ -7,7 +7,12 @@
         "moduleResolution": "node",
         "outDir": "../",
         "rootDir": "./",
-        "target": "es5"
+        "target": "es5",
+        "lib": [
+            "dom",
+            "es2015.promise",
+            "es5"
+        ]
     },
     "exclude": [
         "tsconfig/"
