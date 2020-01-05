@@ -1,0 +1,14 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "module": "es6",
+        "outDir": "../../es6/"
+    },
+    "exclude": [
+        "../**/ordbok-plugin.ts",
+        "../tsconfig/"
+    ],
+    "include": [
+        "../**/*.ts"
+    ]
+}

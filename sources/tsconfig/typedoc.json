@@ -1,0 +1,22 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": [
+        "../index.ts",
+        "../lib/**/*.ts"
+    ],
+    "typedocOptions": {
+        "excludeExternals": true,
+        "excludeNotExported": true,
+        "excludePrivate": true,
+        "excludeProtected": true,
+        "includeDeclarations": true,
+        "gitRevision": "master",
+        "mode": "file",
+        "name": "ORDBOK Plugin Boilerplate",
+        "plugin": "none",
+        "theme": "../../node_modules/@ordbok/typedoc-theme/bin/ordbok"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "removeComments": true,
+        "strict": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "../",
+        "rootDir": "./",
+        "target": "es5"
+    },
+    "exclude": [
+        "tsconfig/"
+    ],
+    "include": [
+        "**/*.ts",
+    ]
+}
