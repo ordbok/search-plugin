@@ -3,7 +3,18 @@
 /* Licensed under the MIT License. See the LICENSE file in the project root. */
 /*---------------------------------------------------------------------------*/
 
-export * from './ISearchEntry';
-export * from './ISearchIndex';
-export * from './ISearchMatch';
-export * from './Search';
+export default ISearchIndex;
+
+/* *
+ *
+ *  Interfaces
+ *
+ * */
+
+/**
+ * Search index
+ */
+export interface ISearchIndex
+{
+    [word: string]: Array<string>;
+}

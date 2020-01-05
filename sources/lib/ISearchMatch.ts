@@ -3,7 +3,15 @@
 /* Licensed under the MIT License. See the LICENSE file in the project root. */
 /*---------------------------------------------------------------------------*/
 
-export * from './ISearchEntry';
-export * from './ISearchIndex';
-export * from './ISearchMatch';
-export * from './Search';
+import ISearchEntry from './ISearchEntry';
+
+export default ISearchMatch;
+
+export interface ISearchMatch extends ISearchEntry {
+    category: string;
+    language: string;
+    loose: boolean;
+    match: string;
+    matchIndex: number;
+    query: string;
+}

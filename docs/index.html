@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ORDBOK Plugin Boilerplate</title>
+	<title>ORDBOK Search Plugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">ORDBOK Plugin Boilerplate</a>
+					<a href="index.html" class="title">ORDBOK Search Plugin API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> ORDBOK Plugin Boilerplate</h1>
+			<h1> ORDBOK Search Plugin API</h1>
 		</div>
 	</div>
 </header>
@@ -60,47 +60,9 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#ordbok-plugin-boilerplate" id="ordbok-plugin-boilerplate" style="color: inherit; text-decoration: none;">
-					<h1>ORDBOK plugin boilerplate</h1>
+				<a href="#ordbok-search-plugin" id="ordbok-search-plugin" style="color: inherit; text-decoration: none;">
+					<h1>ORDBOK Search Plugin</h1>
 				</a>
-				<a href="#get-started" id="get-started" style="color: inherit; text-decoration: none;">
-					<h2>Get started</h2>
-				</a>
-				<p>Files of interest are:</p>
-				<ul>
-					<li><code>sources/lib/index.ts</code>: This should contain common functions that need to be shared between client
-						browser and core plugin. Usually this contains functions for parsing file content or accessing
-					created files. It has to be therefor independent of Node.js functions.</li>
-					<li><code>sources/ordbok-plugin.ts</code>: This is the file with the <code>ordbokPlugin</code> export, which the ORDBOK
-					assembler will load and initiate. Here Node.js functions can be used.</li>
-					<li><code>package.json</code>: The node package settings for your plugin.</li>
-					<li><code>rjsconfig.json</code>: The client package settings of your plugin library.</li>
-				</ul>
-				<a href="#compiling" id="compiling" style="color: inherit; text-decoration: none;">
-					<h2>Compiling</h2>
-				</a>
-				<p>Run <code>npm run build</code> to compile the sources into the <code>dist</code> folder. This creates folders for client
-				and core:</p>
-				<ul>
-					<li><code>dist/client</code>: Your plugin library as multiple files for the client browser.</li>
-					<li><code>dist/lib</code>: Your plugin library as multiple files for the core plugin.</li>
-					<li><code>dist/ordbok-plugin.js</code>: Your core plugin.</li>
-					<li><code>dist/client.js</code>: Your plugin library as a package.</li>
-				</ul>
-				<p><em>Note:</em> Everything named <code>@ordbok/plugin-boilerplate</code> should be renamed with your own plugin name.</p>
-				<a href="#plugin-usage" id="plugin-usage" style="color: inherit; text-decoration: none;">
-					<h2>Plugin usage</h2>
-				</a>
-				<p>You have to create a <code>ordbok.json</code> configuration file in the folder in which you will run the ordbok
-				assembler.</p>
-				<p>In the configuration file you can specify folders where the ORDBOK assembler should search for
-				plugins:</p>
-				<pre><code>{
-    <span class="hljs-attr">"plugins"</span>: [
-        <span class="hljs-string">"node_modules/@ordbok/core"</span>,
-        <span class="hljs-string">"node_modules/@ordbok/plugin-boilerplate"</span>
-    ]
-}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -113,8 +75,17 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function">
-						<a href="globals.html#myutilityfunction" class="tsd-kind-icon">my<wbr>Utility<wbr>Function</a>
+					<li class=" tsd-kind-class">
+						<a href="classes/search.html" class="tsd-kind-icon">Search</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isearchentry.html" class="tsd-kind-icon">ISearch<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isearchindex.html" class="tsd-kind-icon">ISearch<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isearchmatch.html" class="tsd-kind-icon">ISearch<wbr>Match</a>
 					</li>
 				</ul>
 			</nav>

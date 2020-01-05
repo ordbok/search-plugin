@@ -3,7 +3,11 @@
 /* Licensed under the MIT License. See the LICENSE file in the project root. */
 /*---------------------------------------------------------------------------*/
 
-export * from './ISearchEntry';
-export * from './ISearchIndex';
-export * from './ISearchMatch';
-export * from './Search';
+import { IDictionaryEntry } from '@ordbok/core';
+
+export default ISearchEntry;
+
+export interface ISearchEntry {
+    entry: IDictionaryEntry;
+    matchKey: string;
+}

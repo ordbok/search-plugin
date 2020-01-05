@@ -15,7 +15,7 @@
         "includeDeclarations": true,
         "gitRevision": "master",
         "mode": "file",
-        "name": "ORDBOK Plugin Boilerplate",
+        "name": "ORDBOK Search Plugin API",
         "plugin": "none",
         "theme": "../../node_modules/@ordbok/typedoc-theme/bin/ordbok"
     }
