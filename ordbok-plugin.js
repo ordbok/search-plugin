@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ordbokPlugin = void 0;
 var Path = require("path");
 var internals_1 = require("@ordbok/core/internals");
 var lib_1 = require("./lib");

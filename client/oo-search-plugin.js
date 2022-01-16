@@ -4,13 +4,28 @@
 /*! Copyright (c) ORDBOK contributors. All rights reserved.                   */
 /*! Licensed under the MIT License. See the LICENSE file in the project root. */
 /*!---------------------------------------------------------------------------*/
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./lib"));
+__exportStar(require("./lib"), exports);
 
-},{"./lib":3}],2:[function(require,module,exports){
+},{"./lib":6}],2:[function(require,module,exports){
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+
+},{}],3:[function(require,module,exports){
+arguments[4][2][0].apply(exports,arguments)
+},{"dup":2}],4:[function(require,module,exports){
+arguments[4][2][0].apply(exports,arguments)
+},{"dup":2}],5:[function(require,module,exports){
 "use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
@@ -26,6 +41,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Search = void 0;
 var core_1 = require("@ordbok/core");
 exports.default = Search;
 var Search = (function (_super) {
@@ -293,13 +309,23 @@ var Search = (function (_super) {
 }(core_1.AJAX));
 exports.Search = Search;
 
-},{"@ordbok/core":"@ordbok/core"}],3:[function(require,module,exports){
+},{"@ordbok/core":"@ordbok/core"}],6:[function(require,module,exports){
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./Search"));
+__exportStar(require("./ISearchEntry"), exports);
+__exportStar(require("./ISearchIndex"), exports);
+__exportStar(require("./ISearchMatch"), exports);
+__exportStar(require("./Search"), exports);
 
-},{"./Search":2}]},{},[1])(1)
+},{"./ISearchEntry":2,"./ISearchIndex":3,"./ISearchMatch":4,"./Search":5}]},{},[1])(1)
 });
