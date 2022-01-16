@@ -41,7 +41,7 @@
         "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
         "build-1": "tsc --build sources/tsconfig/*.json",
         "build-2": "browserify --external @ordbok/core --outfile client/oo-search-plugin.js --standalone OOSearchPlugin index.js",
-        "build-3": "cd sources/tsconfig && tsl-typedoc --out ../../docs --tsconfig typedoc.json",
+        "build-3": "cd sources/tsconfig && tsl-typedoc --out ../../docs --tsconfig tsl-typedoc.json",
         "clean": "rm -rf $(< .clean)",
         "watch": "npm run build-1 -- --watch"
     }
