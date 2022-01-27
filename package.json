@@ -26,7 +26,7 @@
         "lib/",
         "index.d.ts",
         "index.js",
-        "LICENSE",
+        "LICENSE.md",
         "ordbok-plugin.js",
         "README.md"
     ],
