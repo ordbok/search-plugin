@@ -9,7 +9,7 @@
     "name": "@ordbok/search-plugin",
     "repository": "https://github.com/ordbok/search-plugin.git",
     "types": "index.d.ts",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "devDependencies": {
         "@ordbok/core": "~0.2.3",
         "@ordbok/typedoc-theme": "~0.6.0",
