@@ -9,14 +9,14 @@
     "name": "@ordbok/search-plugin",
     "repository": "https://github.com/ordbok/search-plugin.git",
     "types": "index.d.ts",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "devDependencies": {
-        "@ordbok/core": "~0.2.3",
+        "@ordbok/core": "~0.2.5",
         "@ordbok/typedoc-theme": "~0.6.0",
         "@types/node": "^14.10.0",
-        "browserify": "^17.0.0",
-        "typescript": "~3.9.10",
-        "typescriptlibs.typedoc": "github:typescriptlibs/typescriptlibs.typedoc#v0.19.4"
+        "browserify": "^17",
+        "typescript": "~3.9",
+        "typescriptlibs.typedoc": "github:typescriptlibs/typescriptlibs.typedoc#v0.19.7"
     },
     "engines": {
         "node": ">=14.10.0"
@@ -35,7 +35,7 @@
         "ordbok"
     ],
     "peerDependencies": {
-        "@ordbok/core": ">=0.2.2"
+        "@ordbok/core": ">=0.2.3"
     },
     "scripts": {
         "build": "npm run clean && npm run build-1 && npm run build-2 && npm run build-3",
